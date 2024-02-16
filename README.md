@@ -4,11 +4,11 @@ Welcome to the EcoTrac🌲This Web application aims to assist users in monitorin
 
 ## Team Members
 
-- Keshav Priyam
-- Priyanshu Joshi
-- Anubhav Yadav
-- Eshaan Sabharwal
-- Sparsh Jaiswal
+- [Keshav Priyam](https://www.linkedin.com/in/keshavpriyam/)
+- [Priyanshu Joshi](https://www.linkedin.com/in/priyanshu-joshi03/)
+- [Anubhav Yadav](https://www.linkedin.com/in/anubhav-yadav-srm/)
+- [Eshaan Sabharwal](https://www.linkedin.com/in/eshaan-sabharwal-b73a201b2/)
+- [Sparsh Jaiswal](https://www.linkedin.com/in/sparsh-jaiswal-a061b3267/)
 
 # Problem Statement
 Develop a web or mobile application that educates beginners on sustainable living practices and tracks their progress in adopting eco-friendly habits. This application include features such as Carbon Footprints calculations, tips for reducing carbon emission and challenges to encourage sustainable behaviours.
