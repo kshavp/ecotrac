@@ -1,0 +1,23 @@
+<%-include('navbar')-%>
+<div class="flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded shadow-md w-96">
+        <h1 class="text-8xl text-center my-2">🌲</h1>
+        <h2 class="text-3xl font-bold mb-4 text-center text-gray-800">Login</h2>
+
+        <!-- Form -->
+        <form action="/login" class="space-y-4" method="post">
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-600">email</label>
+                <input type="text" id="email" name="email" class="w-full mt-1 p-3 border rounded focus:outline-none focus:border-blue-500 transition-all duration-300">
+            </div>
+
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-600">Password</label>
+                <input type="password" id="password" name="password" class="w-full mt-1 p-3 border rounded focus:outline-none focus:border-blue-500 transition-all duration-300">
+            </div>
+
+            <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-teal-500 text-white p-3 rounded hover:bg-gradient-to-r hover:from-blue-600 hover:to-teal-600 focus:outline-none transition-all duration-300">Login</button>
+        </form>
+    </div>
+</div>
+<%-include('footer')-%>

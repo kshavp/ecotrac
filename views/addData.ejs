@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTracker Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="min-h-screen flex items-center justify-center bg-gray-100 rounded-lg">
+
+        <div class="bg-white p-8 rounded shadow-md w-96">
+            <h2 class="text-2xl font-semibold mb-4 text-center">EcoTracker - Weekly Environmental Data</h2>
+
+            <form action="/footprint" method="post" class="space-y-4">
+                <div>
+                    <label for="travelDistance" class="block text-sm font-medium text-gray-600">Travel Distance (km/week):</label>
+                    <input type="number" id="travelDistance" name="travelDistance" class="w-full mt-1 p-2 border rounded focus:outline-none focus:border-blue-500">
+                </div>
+
+                <div>
+                    <label for="electricityConsumption" class="block text-sm font-medium text-gray-600">Electricity Consumption (kWh/week):</label>
+                    <input type="number" id="electricityConsumption" name="electricityConsumption" class="w-full mt-1 p-2 border rounded focus:outline-none focus:border-blue-500">
+                </div>
+
+                <div>
+                    <label for="wasteProduced" class="block text-sm font-medium text-gray-600">Waste Produced (kg/week):</label>
+                    <input type="number" id="wasteProduced" name="wasteProduced" class="w-full mt-1 p-2 border rounded focus:outline-none focus:border-blue-500">
+                </div>
+
+                <div>
+                    <label for="naturalGasUsage" class="block text-sm font-medium text-gray-600">Natural Gas Usage for Cooking (m³/week):</label>
+                    <input type="number" id="naturalGasUsage" name="naturalGasUsage" class="w-full mt-1 p-2 border rounded focus:outline-none focus:border-blue-500">
+                </div>
+
+                <button type="submit" class="w-full bg-blue-500 text-white p-3 rounded hover:bg-blue-600 focus:outline-none">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
