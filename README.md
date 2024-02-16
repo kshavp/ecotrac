@@ -1,11 +1,11 @@
-SUSTAINABLE LIVING TRACKER 🌲
+EcoTrac🌲
 
-Welcome to the Sustainable Living Tracker! This Web application aims to assist users in monitoring and improving their sustainability practices in various aspects of daily life. By providing insights, tips, and tracking capabilities, this tool empowers individuals to make more environmentally conscious choices and reduce their Carbon footprint.🌍
+Welcome to the EcoTrac🌲This Web application aims to assist users in monitoring and improving their sustainability practices in various aspects of daily life. By providing insights, tips, and tracking capabilities, this tool empowers individuals to make more environmentally conscious choices and reduce their Carbon footprint🌍
 
-## Problem Statements
-Develop a web or mobile application that educates beginners on sustainable living practices and tracks their progress in adopting eco-friendly habits. This application include features such as Carbon Footprints calculations , tips for reducing  waste, and challenges to encourage sustainable behaviours.
+#Problem Statements
+Develop a web or mobile application that educates beginners on sustainable living practices and tracks their progress in adopting eco-friendly habits. This application include features such as Carbon Footprints calculations, tips for reducing carbon emission and challenges to encourage sustainable behaviours.
 
-## Key Features 
+# Key Features 
 🌍Tracking: Users can track their activities related to energy consumption, water usage, waste generation, transportation, and more.
 
 🌍Analysis: This application provides analysis and visualization of users' sustainability data, allowing them to identify patterns and areas for improvement.
@@ -16,7 +16,7 @@ Develop a web or mobile application that educates beginners on sustainable livin
 
 🌍Community: Users can connect with like-minded individuals, share experiences, and collaborate on sustainability initiatives.
 
-## Technologies Used 
+# Technologies Used 
 
 Frontend: EJS, TailwindCSS, Vanilla CSS
 Backend: Node.js, Express.js, 
