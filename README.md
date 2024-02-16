@@ -10,7 +10,7 @@ Welcome to the EcoTrac🌲This Web application aims to assist users in monitorin
 - Eshaan Sabharwal
 - Sparsh Jaiswal
 
-#Problem Statements
+# Problem Statement
 Develop a web or mobile application that educates beginners on sustainable living practices and tracks their progress in adopting eco-friendly habits. This application include features such as Carbon Footprints calculations, tips for reducing carbon emission and challenges to encourage sustainable behaviours.
 
 # Key Features 
