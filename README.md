@@ -2,6 +2,14 @@
 
 Welcome to the EcoTrac🌲This Web application aims to assist users in monitoring and improving their sustainability practices in various aspects of daily life. By providing insights, tips, and tracking capabilities, this tool empowers individuals to make more environmentally conscious choices and reduce their Carbon footprint🌍
 
+## Team Members
+
+- Keshav Priyam
+- Priyanshu Joshi
+- Anubhav Yadav
+- Eshaan Sabharwal
+- Sparsh Jaiswal
+
 #Problem Statements
 Develop a web or mobile application that educates beginners on sustainable living practices and tracks their progress in adopting eco-friendly habits. This application include features such as Carbon Footprints calculations, tips for reducing carbon emission and challenges to encourage sustainable behaviours.
 
