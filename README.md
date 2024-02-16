@@ -1,4 +1,4 @@
-#EcoTrac by Team PolyCognit🌲
+# EcoTrac by Team PolyCognit🌲
 
 Welcome to the EcoTrac🌲This Web application aims to assist users in monitoring and improving their sustainability practices in various aspects of daily life. By providing insights, tips, and tracking capabilities, this tool empowers individuals to make more environmentally conscious choices and reduce their Carbon footprint🌍
 
