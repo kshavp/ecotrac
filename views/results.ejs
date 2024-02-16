@@ -17,28 +17,27 @@
     </div>
 </nav>
 
-<div class="flex justify-between p-8">
-
-    <div class="results-section w-1/4 bg-white p-8 rounded shadow-md">
+<p class="bg-red-500 text-white text-center text-sm">You have emitted <b><%= transport + electricity + gas + waste %></b> kg CO2 this week</p>
+<div id="container" class="flex justify-center items-center space-x-16">
+    <div class="results-section w-1/4 bg-white p-8 rounded shadow-md mt-4 mb-4">
         <h2 class="text-2xl font-semibold mb-4 text-center">EcoTracker - Weekly Environmental Results</h2>
-
         <div class="mb-4">
             <p class="text-gray-600">Travel Emission(kg CO2) <span class="font-bold"><%=transport%></span></p>
         </div>
-
         <div class="mb-4">
             <p class="text-gray-600">Electricity Emission (kg CO2): <span class="font-bold"><%=electricity%></span></p>
         </div>
-
         <div class="mb-4">
             <p class="text-gray-600">Waste Emission (kg CO2): <span class="font-bold"><%=gas%></span></p>
         </div>
-
         <div class="mb-4">
             <p class="text-gray-600">Natural Gas Emission (kg CO2): <span class="font-bold"><%=waste%></span></p>
         </div>
-
         <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+    <div>
+        <p class="text-center text-xl p-2 bg-gray-200">⬇️ Tap Here for Further information about the Data</p>
+        <a class="min-h-screen" target="_blank" href="https://hackathon-n4jnotpjxskwfhsdiuyfue.streamlit.app/"><img class="rounded-lg border-4 border-white cursor-pointer" src="./pic2.png" alt="" height="700" width="700"></a>
     </div>
 </div>
 
@@ -63,6 +62,31 @@
                 <i class="fas fa-globe text-teal-500 text-4xl mb-4"></i>
                 <h3 class="text-xl font-semibold mb-2">Tip #3</h3>
                 <p id="tip-3"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-gray-100 py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-extrabold mb-8">Challenges for you 🛑</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="p-6 bg-white rounded-lg shadow-md">
+                <i class="fas fa-leaf text-teal-500 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Book an online ticket for your next metro ride </h3>
+                <p id="ch-1" class="text-white bg-green-400 rounded-lg text-center">EcoPoint +1🪙</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="p-6 bg-white rounded-lg shadow-md">
+                <i class="fas fa-cogs text-teal-500 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Use Matka for cooling drinking water instead of fridge</h3>
+                <p id="ch-2" class="text-white bg-green-400 rounded-lg text-center">EcoPoint +1🪙</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="p-6 bg-white rounded-lg shadow-md">
+                <i class="fas fa-globe text-teal-500 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Adopt clay untensils and organic plates for dining</h3>
+                <p id="ch-3" class="text-white bg-green-400 rounded-lg text-center">EcoPoint +1🪙</p>
             </div>
         </div>
     </div>
@@ -116,26 +140,34 @@
 
         // Create an array with labels and corresponding values
         var dataArr = [
-            { label: 'Effortlessly monitor and reduce your carbon footprint from travel.', value: transport },
-            { label: 'Save energy by using energy-efficient appliances and turning off lights when not needed.', value: electricity },
-            { label: 'Reduce waste by practicing recycling and composting.', value: gas },
-            { label: 'Conserve natural gas by using energy-efficient cooking methods.', value: waste }
+            { label: '🚌Effortlessly monitor and reduce your carbon footprint from travel.', value: transport },
+            { label: '🪫Save energy by using energy-efficient appliances and turning off lights when not needed.', value: electricity },
+            { label: '⛽Reduce waste by practicing recycling and composting.', value: gas },
+            { label: '🚮Use a reusable bottle for beverages on-the-go.', value: waste }
+        ];
+        var dataArrCh = [
+            { label: `Book an online ticket for your next metro ride |<p class='text-green-600'>-558gm</p>`, value: transport },
+            { label: `Use Matka for cooling drinking water instead of fridge`, value: electricity },
+            { label: `Adopt clay untensils and organic plates for dining`, value: gas },
+            { label: `Eat Vegetarian food for this week`, value: waste }
         ];
 
         
 
         // Sort the array in descending order based on values
         dataArr.sort((a, b) => b.value - a.value);
+        dataArrCh.sort((a, b) => b.value - a.value);
 
         // Extract the top 3 items
         var top3 = dataArr.slice(0, 3);
+        var top3Ch = dataArrCh.slice(0, 3);
 
         // Extract tips descriptions
-        // var tipsDescriptions = top3.map(item => item.label);
 
         for (var i = 0; i < top3.length; i++) {
             var tipDescription = top3[i].label;
             document.getElementById('tip-' + (i + 1)).innerHTML = tipDescription;
+            // document.getElementById('ch-' + (i + 1)).innerHTML = ChallengesDescriptions;
         }
 
 
