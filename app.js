@@ -31,12 +31,10 @@ app.post('/login', (req, res) => {
     pool.query('SELECT * FROM user WHERE email = ? AND password = ?', [email, password], (error, results) => {
       if (error) {
         console.error(error);
-        // res.status(500).send('Internal Server Error');
         res.redirect('error503');
         // return;
       }
   
-      // Check if the user exists in the database
       if (results.length > 0) {
         username = email.replace("@gmail.com", "");
         res.render('dashboard',{username, al_sub});
@@ -81,6 +79,9 @@ app.get('/feature',(req,res)=>{
 app.get('/dashboard',(req,res)=>{
     res.render('dashboard')
 });
+app.get('/team',(req,res)=>{
+    res.render('team')
+})
 
 app.listen(PORT, ()=>{
     console.log( `Server is running on port ${PORT}`);
